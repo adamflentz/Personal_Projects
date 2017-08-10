@@ -1,0 +1,379 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/adam/workspace/sample_app/test/test_helper.rb",
+		"/home/adam/workspace/sample_app/app/views/static_pages/home.html.erb",
+		"/home/adam/workspace/sample_app/test/controllers/static_pages_controller_test.rb",
+		"/home/adam/workspace/sample_app/app/helpers/application_helper.rb",
+		"/home/adam/workspace/sample_app/app/views/layouts/application.html.erb",
+		"/home/adam/workspace/sample_app/config/routes.rb",
+		"/home/adam/workspace/sample_app/app/controllers/application_controller.rb",
+		"/home/adam/workspace/sample_app/app/controllers/static_pages_controller.rb",
+		"/home/adam/workspace/sample_app/app/views/static_pages/about.html.erb",
+		"/home/adam/workspace/sample_app/app/views/static_pages/help.html.erb",
+		"/home/adam/workspace/sample_app/app/views/static_pages/contact.html.erb",
+		"/home/adam/Personal Projects/DatabaseProject/Restaurant DB",
+		"/home/adam/workspace/sample_app/Gemfile",
+		"/home/adam/workspace/toy_app/app/controllers/users_controller.rb",
+		"/home/adam/workspace/toy_app/app/models/user.rb",
+		"/home/adam/workspace/toy_app/app/views/users/show.html.erb",
+		"/home/adam/workspace/toy_app/app/models/micropost.rb",
+		"/home/adam/workspace/toy_app/config/routes.rb",
+		"/home/adam/workspace/toy_app/app/controllers/application_controller.rb",
+		"/home/adam/workspace/toy_app/Gemfile",
+		"/home/adam/workspace/hello_app/config/routes.rb",
+		"/home/adam/workspace/hello_app/app/controllers/application_controller.rb",
+		"/home/adam/workspace/hello_app/Gemfile",
+		"/home/adam/blog/app/views/articles/new.html.erb",
+		"/home/adam/blog/db/migrate/20160917183741_create_articles.rb",
+		"/home/adam/blog/app/views/welcome/index.html.erb",
+		"/home/adam/blog/app/models/article.rb",
+		"/home/adam/blog/db/migrate/20160920040237_create_comments.rb",
+		"/home/adam/blog/app/models/comment.rb",
+		"/home/adam/blog/app/controllers/comments_controller.rb",
+		"/home/adam/blog/app/views/comments/_comment.html.erb",
+		"/home/adam/blog/app/views/comments/_form.html.erb",
+		"/home/adam/blog/app/views/articles/show.html.erb",
+		"/home/adam/blog/app/views/articles/index.html.erb",
+		"/home/adam/blog/app/views/articles/edit.html.erb",
+		"/home/adam/blog/app/views/articles/_form.html.erb",
+		"/home/adam/blog/app/controllers/articles_controller.rb",
+		"/home/adam/blog/config/routes.rb",
+		"/home/adam/blog/app/controllers/welcome_controller.rb",
+		"/home/adam/blog/app/helpers/welcome_helper.rb",
+		"/home/adam/workspace/Sliding Puzzle/src/edu/wm/cs/cs301/slidingpuzzle/SimplePuzzleState.java"
+	],
+	"find":
+	{
+		"height": 74.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"nokogiri",
+			"30"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 43.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "static_pages_controller_test.sublime-project",
+	"replace":
+	{
+		"height": 82.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"comments_contro",
+				"app/controllers/comments_controller.rb"
+			],
+			[
+				"articles_co",
+				"app/controllers/articles_controller.rb"
+			],
+			[
+				"article.rb",
+				"app/models/article.rb"
+			],
+			[
+				"comments_",
+				"app/controllers/comments_controller.rb"
+			],
+			[
+				"_comme",
+				"app/views/comments/_comment.html.erb"
+			],
+			[
+				"comments_con",
+				"app/controllers/comments_controller.rb"
+			],
+			[
+				"show.",
+				"app/views/articles/show.html.erb"
+			],
+			[
+				"comments_co",
+				"app/controllers/comments_controller.rb"
+			],
+			[
+				"articles_",
+				"app/controllers/articles_controller.rb"
+			],
+			[
+				"routes.",
+				"config/routes.rb"
+			],
+			[
+				"",
+				"app/views/articles/edit.html.erb"
+			],
+			[
+				"new",
+				"app/views/articles/new.html.erb"
+			],
+			[
+				"_form",
+				"app/views/articles/_form.html.erb"
+			],
+			[
+				"form",
+				"app/views/articles/_form.html.erb"
+			],
+			[
+				"controll",
+				"app/controllers/articles_controller.rb"
+			],
+			[
+				"create_ar",
+				"db/migrate/20160917183741_create_articles.rb"
+			],
+			[
+				"show",
+				"app/views/articles/show.html.erb"
+			],
+			[
+				"routes.rb",
+				"config/routes.rb"
+			],
+			[
+				"welcome_",
+				"app/helpers/welcome_helper.rb"
+			],
+			[
+				"welcome",
+				"app/controllers/welcome_controller.rb"
+			],
+			[
+				"article.r",
+				"app/models/article.rb"
+			],
+			[
+				"create_comm",
+				"db/migrate/20160920040237_create_comments.rb"
+			],
+			[
+				"comment.",
+				"app/models/comment.rb"
+			],
+			[
+				"index",
+				"app/views/articles/index.html.erb"
+			],
+			[
+				"articl",
+				"app/controllers/articles_controller.rb"
+			],
+			[
+				"edit.html",
+				"app/views/articles/edit.html.erb"
+			],
+			[
+				"new.html",
+				"app/views/articles/new.html.erb"
+			],
+			[
+				"show.ht",
+				"app/views/articles/show.html.erb"
+			],
+			[
+				"article",
+				"app/controllers/articles_controller.rb"
+			],
+			[
+				"edit.",
+				"app/views/articles/edit.html.erb"
+			],
+			[
+				"articles/new",
+				"app/views/articles/new.html.erb"
+			],
+			[
+				"view/articles/in",
+				"app/views/articles/index.html.erb"
+			],
+			[
+				"views/articles/new",
+				"app/views/articles/new.html.erb"
+			],
+			[
+				"view/articles/new",
+				"app/views/articles/new.html.erb"
+			],
+			[
+				"app/models/ar",
+				"app/models/article.rb"
+			],
+			[
+				"new.h",
+				"app/views/articles/new.html.erb"
+			],
+			[
+				"articles/in",
+				"app/views/articles/index.html.erb"
+			],
+			[
+				"welcome/in",
+				"app/views/welcome/index.html.erb"
+			],
+			[
+				"create_",
+				"db/migrate/20160917183741_create_articles.rb"
+			],
+			[
+				"db/migrate/",
+				"db/migrate/20160917183741_create_articles.rb"
+			],
+			[
+				"articles",
+				"app/controllers/articles_controller.rb"
+			],
+			[
+				"inde",
+				"app/views/welcome/index.html.erb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 229.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
