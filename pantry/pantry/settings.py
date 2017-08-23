@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'pantry.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'userdb.sqlite3'),
+        'NAME': '/home/adam/database/recipedb.sqlite3',
     }
 }
 
