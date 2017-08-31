@@ -1,5 +1,5 @@
+# Create your models here.
 # -*- coding: utf-8 -*-
-from __future__ import unicode_literals
 from allauth.socialaccount.models import SocialAccount
 import hashlib
 from django.db import models
@@ -36,6 +36,26 @@ class UserProfile(models.Model):
 
         return "http://www.gravatar.com/avatar/{}?s=40".format(hashlib.md5(self.user.email).hexdigest())
 
+class Ingredient(models.Model):
+    name = models.TextField()
+    class Meta:
+        db_table = 'ingredient'
 
+class Pantry(models.Model):
+    name = models.CharField(max_length=100)
+    ingredients = models.ManyToManyField(Ingredient)
+    user = models.ForeignKey(UserProfile)
+
+class Recipe(models.Model):
+    name = models.TextField()
+    author = models.TextField()
+    ingredients = models.TextField()
+    recipeyield = models.TextField()
+    difficulty = models.TextField()
+    totaltime = models.TextField()
+    activetime = models.TextField()
+    directions = models.TextField()
+    class Meta:
+        db_table = 'recipe'
 User.profile = property(lambda u: UserProfile.objects.get_or_create(user=u)[0])
 
