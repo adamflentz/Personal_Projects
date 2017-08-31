@@ -32,10 +32,11 @@ class recipecards(TemplateView):
             ingredient1 = requestform.cleaned_data['ingredient1']
             ingredient2 = requestform.cleaned_data['ingredient2']
             ingredient3 = requestform.cleaned_data['ingredient3']
-        if len(requestform.cleaned_data):
-            recipes = Recipe.objects.all()
+
+        if ingredient2 == '' and ingredient3 == '':
+            recipes = Recipe.objects.all().filter(ingredients__contains=ingredient1)
             for element in recipes:
-                print(element)
+                print(element.ingredients)
             print(recipes)
-            #recipecard = random.choice(recipes)
+            recipecard = random.choice(recipes)
         return render(request, 'recipecards.html', locals())
