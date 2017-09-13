@@ -4,7 +4,7 @@ from django.views.generic import TemplateView
 from django.shortcuts import render
 from forms import IngredientForm
 from models import Recipe
-import sqlite3, random
+import sqlite3, random, json, itertools
 
 # Create your views here.
 class home(TemplateView):
@@ -29,14 +29,34 @@ class recipecards(TemplateView):
     def post(self, request):
         requestform = IngredientForm(request.POST)
         if requestform.is_valid():
-            ingredient1 = requestform.cleaned_data['ingredient1']
-            ingredient2 = requestform.cleaned_data['ingredient2']
-            ingredient3 = requestform.cleaned_data['ingredient3']
+            ingredientlist = []
+            ingredientlist.append(requestform.cleaned_data['ingredient1'])
+            if requestform.cleaned_data['ingredient2'] != '':
+                ingredientlist.append(requestform.cleaned_data['ingredient2'])
+            if requestform.cleaned_data['ingredient3'] != '':
+                ingredientlist.append(requestform.cleaned_data['ingredient3'])
+            if len(ingredientlist) == 1:
+                recipes = Recipe.objects.all().filter(ingredients__contains=ingredientlist[0])
+            elif len(ingredientlist) == 2:
+                recipes = Recipe.objects.all().filter(ingredients__contains=ingredientlist[0]).filter(ingredients__contains=ingredientlist[1])
+            elif len(ingredientlist) == 3:
+                recipes = Recipe.objects.all().filter(ingredients__contains=ingredientlist[0])\
+                    .filter(ingredients__contains=ingredientlist[1])\
+                    .filter(ingredients__contains=ingredientlist[2])
+                if len(recipes) != 0:
+                    outputmessage = "Showing Recipes for " + ingredientlist[0] + ", " + ingredientlist[1] + ", " + "and " + ingredientlist[2]
+            if len(recipes) == 0:
+                outputmessage = "No Available Matches for All Three Ingredients"
+                error = True
+                print(recipes)
+            else:
+                error = False
+                recipecard = random.choice(recipes)
+                recipe_ingredientlist = json.loads(recipecard.ingredients)
+                numitems = len(recipe_ingredientlist)
+                print(recipecard.name)
+                print type(recipe_ingredientlist)
+                print(recipe_ingredientlist[1])
 
-        if ingredient2 == '' and ingredient3 == '':
-            recipes = Recipe.objects.all().filter(ingredients__contains=ingredient1)
-            for element in recipes:
-                print(element.ingredients)
-            print(recipes)
-            recipecard = random.choice(recipes)
+
         return render(request, 'recipecards.html', locals())

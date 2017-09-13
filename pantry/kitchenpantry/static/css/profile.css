@@ -1,3 +1,98 @@
+.page-header{
+    border-top: 3px solid #B65FE5;
+    box-shadow: 0 1px 0;
+    height: 55px;
+    background-color: #B65FE5;
+}
+.page-header .container {
+    max-width: 1060px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    box-sizing: content-box;
+
+}
+
+.page-header .container .logo_block {
+    display: inline-block;
+    float: left;
+}
+.page-header .container .logged-in {
+    display: inline-block;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #B65FE5;
+}
+
+.dropdown-menu-right {
+    padding: .5rem 10px;
+}
+.dropdown-menu ul {
+    float: right;
+    position: relative;
+    list-style: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    display: block;
+    position:relative;
+
+}
+
+.dropdown-toggle::after {
+    display:none
+}
+
+.btn-group {
+    margin: 0px;
+    height: 100%;
+    position: relative;
+    float: right;
+    margin-left: auto;
+
+}
+.btn-basic {
+    background-color: #B65FE5;
+    padding: 0px;
+}
+
+.logo-block {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-item {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-top: 3px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 3px;
+}
+
  /* Style the tab */
 div.tab {
     float: left;
@@ -40,3 +135,4 @@ div.tab button.active {
     border-left: none;
     height: 300px;
 }
+

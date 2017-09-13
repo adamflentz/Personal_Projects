@@ -2,14 +2,13 @@ import sqlite3
 ingredientin = open('cleanedingredients.txt', 'r')
 totalingredientlist = []
 outingredientlist = []
-database = "/home/adam/database/ingredientrecipedb.sqlite3"
+# database = "/home/adam/database/ingredientrecipedb.sqlite3"
 database2 = "/home/adam/database/recipedb.sqlite3"
-conn = sqlite3.connect(database)
+# conn = sqlite3.connect(database)
 conn2 = sqlite3.connect(database2)
-conn.text_factory = str
+# conn.text_factory = str
 conn2.text_factory = str
-c = conn.cursor()
-c2 = conn2.cursor()
+c = conn2.cursor()
 # for line in ingredientin:
 #     # line = line.strip()
 #     # if " Or " in line:
@@ -77,11 +76,8 @@ c2 = conn2.cursor()
 # ingredientin.close()
 # totalingredientlist.sort()
 # ingredientout = open('cleanedingredients.txt', 'w')
-for element in c.execute('SELECT * FROM recipe'):
-    print(element)
-    c2.execute('''INSERT INTO recipe (name, author, ingredients, recipeyield, difficulty, totaltime, activetime, directions) VALUES (?, ?, ?, ?, ?, ?, ?, ?)''', (element[1], element[2], element[3], element[4], element[5], element[6], element[7], element[8]))
+    # c2.execute('''INSERT INTO recipe (name, author, ingredients, recipeyield, difficulty, totaltime, activetime, directions) VALUES (?, ?, ?, ?, ?, ?, ?, ?)''', (element[1], element[2], element[3], element[4], element[5], element[6], element[7], element[8]))
+c.execute('''UPDATE recipe SET directions = replace(directions, 'Photograph by ', '')''')
 conn2.commit()
-c.close()
-
-
+conn2.close()
 
