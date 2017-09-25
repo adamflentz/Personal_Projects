@@ -11,7 +11,7 @@ class home(TemplateView):
     def get(self, request):
         return render(request, 'home.html', locals())
 class profile(TemplateView):
-    def get(selfself, request):
+    def get(self, request):
         return render(request, 'profile.html', locals())
 class recipequery(TemplateView):
     def get(self, request):
