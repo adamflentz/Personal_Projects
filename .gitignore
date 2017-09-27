@@ -1,0 +1,6 @@
+tmp/*
+*.pyc
+.idea
+key.pem
+!tmp/.tmpdir
+run/*
