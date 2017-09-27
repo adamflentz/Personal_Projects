@@ -1,7 +1,6 @@
-import java.util.Dictionary;
 import java.util.HashMap;
 import java.util.Map;
-
+// Question taken from https://www.hackerrank.com/challenges/ctci-making-anagrams/problem
 public class Anagram {
 
     private Map<Character, Integer> MakeDict(String a){

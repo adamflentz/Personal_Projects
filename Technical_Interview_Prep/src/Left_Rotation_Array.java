@@ -1,3 +1,5 @@
+// Question taken from https://www.hackerrank.com/challenges/ctci-array-left-rotation/problem
+
 class Left_Rotation_Array {
     public int[] rotate(int number, int leftrotation){
         int[] arrayInput = new int[number];
